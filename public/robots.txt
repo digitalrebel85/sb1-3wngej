@@ -1,0 +1,11 @@
+# *
+User-agent: *
+Allow: /
+Disallow: /api
+Disallow: /admin
+
+# Host
+Host: https://findanadvisor.online
+
+# Sitemaps
+Sitemap: https://findanadvisor.online/sitemap.xml
