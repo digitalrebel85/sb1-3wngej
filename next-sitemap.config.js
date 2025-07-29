@@ -1,6 +1,25 @@
 /** @type {import('next-sitemap').IConfig} */
-const { advisorTypes } = require('./data/advisor-types');
-const { cities } = require('./data/cities');
+// Inline data to avoid build-time import issues
+const advisorTypes = [
+  { slug: 'financial-advisors' },
+  { slug: 'mortgage-advisors' },
+  { slug: 'pension-advisors' },
+  { slug: 'investment-advisors' },
+  { slug: 'wealth-managers' }
+];
+
+const cities = [
+  { slug: 'london' },
+  { slug: 'manchester' },
+  { slug: 'birmingham' },
+  { slug: 'leeds' },
+  { slug: 'glasgow' },
+  { slug: 'liverpool' },
+  { slug: 'bristol' },
+  { slug: 'sheffield' },
+  { slug: 'edinburgh' },
+  { slug: 'cardiff' }
+];
 
 // Blog posts for sitemap
 const blogPosts = [
